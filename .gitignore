@@ -1,0 +1,50 @@
+# ============================================================
+#  .gitignore —— 告诉 git「哪些东西永远不要提交」
+#  规则：写在这里的路径，git 会当它不存在。
+#  想加新的，直接新起一行写路径就行。
+# ============================================================
+
+# ---- 密钥：这一组是红线，永远不能推到 GitHub ----
+# 你的 API Key 一旦推到公开仓库，几十秒内就会被爬虫扫走跑掉额度。
+.env
+.env.*
+*.env
+!*.env.example
+secrets.json
+api_key.txt
+config.local.*
+
+# ---- 本地档案 / 记忆（含个人笔记，不公开）----
+.workbuddy/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+
+# ---- Node（第 5 层做多步编排时可能用到）----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- 编辑器 / 操作系统的杂项文件 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# ---- 大文件与临时产物 ----
+# 以后如果确实想把某个数据文件推上去，把对应行删掉即可
+*.zip
+*.7z
+*.log
+data/raw/
+temp/
