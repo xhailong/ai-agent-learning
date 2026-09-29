@@ -14,6 +14,7 @@ secrets.json
 api_key.txt
 config.local.*
 
+
 # ---- 本地档案 / 记忆（含个人笔记，不公开）----
 .workbuddy/
 
@@ -26,6 +27,7 @@ env/
 .ipynb_checkpoints/
 *.egg-info/
 .pytest_cache/
+.qoder/
 
 # ---- Node（第 5 层做多步编排时可能用到）----
 node_modules/
